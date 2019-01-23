@@ -357,15 +357,6 @@ bot.on("message", async message => {
 	}
 	
 	else if(command.includes("/") || command.includes(".")) return;
-	//if(citati.seznam.includes(command))	return;
-	/*else if(citati.seznam2.includes(command)){
-		try {
-			let commandFile = require(`./commands/${command}.js`);
-			commandFile.run(bot, message, args);
-		} catch (err) {
-			console.error(err);
-		}
-	}*/
 	else message.channel.send("<:thinkingwithblobs:301315306373251073> Ne razumem. Potrebuješ `" + config.prefix + "pomoč`?");
 });
 bot.login(config.token);
